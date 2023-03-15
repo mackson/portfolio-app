@@ -1,0 +1,6 @@
+/* Contact Styles */
+
+.contact {
+  height: 100vh;
+  scroll-snap-align: center;
+}
