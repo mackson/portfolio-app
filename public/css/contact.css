@@ -1,6 +1,50 @@
 /* Contact Styles */
 
-.contact {
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   height: 100vh;
   scroll-snap-align: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  height: 94vh;
+  width: 1400px;
+}
+
+.contact-form {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-form form {
+  display: flex;
+  gap: 10px;
+  width: 500px;
+  justify-content: center;
+  padding: 10px;
+  flex-direction: column;
+}
+
+#contact-globe{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+}
+
+.footer {
+  display: flex;
+  width: 1400px;
+  height: 6vh;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  padding: 10px 0px;
 }

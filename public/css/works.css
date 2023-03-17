@@ -1,6 +1,38 @@
 /* Works Styles */
 
-.timeline {
+.works-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   height: 100vh;
   scroll-snap-align: center;
+}
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1400px;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 1400px;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.section-title h2 {
+  font-size: 40px;
+}
+
+.job {
+  width: 300px;
+  height: 400px;
+  border: 2px solid #fff;
+  border-radius: 6px;
 }

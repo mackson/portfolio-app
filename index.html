@@ -6,10 +6,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="" />
   <title>Mackson Araujo | Desenvolvedor Full Stack</title>
+  
   <!-- Custom CSS-->
   <link rel="stylesheet" href="public/css/main.css" />
   <link rel="stylesheet" href="public/css/hero.css" />
+  <link rel="stylesheet" href="public/css/about.css" />
   <link rel="stylesheet" href="public/css/works.css" />
   <link rel="stylesheet" href="public/css/contact.css" />
   <link rel="shortcut icon" href="public/img/logo1.png" type="image/x-icon" />
@@ -24,7 +27,7 @@
       <div class="navbar-wrapper">
         <nav class="navbar">
           <div class="menu-wrapper">
-            <img class="logo" src="public/img/logo1.png" alt="logo"/>
+            <img class="logo" src="public/img/logo3.png" alt="logo"/>
             <ul class="menu">
               <li>Home</li>
               <li>Quem Sou</li>
@@ -34,7 +37,7 @@
           </div>
           <div class="buttons-wrapper">
             <button class="lang-button">
-              <img src="public/img/united-states.png" alt="usa">
+              <img src="public/img/united-states.png" alt="usa" />
             </button>
             <button class="hire-button">Contrate-me!</button>
           </div>
@@ -64,28 +67,80 @@
       </div>
     </section>
 
-    <section class="who-wrapper">
-      <div class="who">
-        <div class="who-left">
-          
+    <section class="about-wrapper">
+      <div class="about">
+        <div class="about-left">
+          <img src="public/img/photo3.png" alt="myphoto" class="about-photo"/>
         </div>
-        <div class="who-right"></div>
+        <div class="about-right">
+          <h2>About <span class="hero-xp-highlight">Me</span></h2>
+          <h1>John Doe</h1>
+         
+          <div class="about-description">
+            I enjoy creating delightful, human-centered digital experiences.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Cumque nihil quo maxime deserunt at perferendis ipsam iure laborum esse minus, quidem officiis ullam? 
+            Nostrum, odio? Laudantium, cum itaque. Quaerat, maxime.
+            <p> 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Cumque nihil quo maxime deserunt at perferendis ipsam iure laborum esse minus, quidem officiis ullam? 
+            </p>
+          </div>
+          <div class="buttons-wrapper">
+            <a href="#" class="social-button">
+              <img src="public/img/github.png" alt="github" />
+            </a>
+            <a href="#" class="social-button">
+              <img src="public/img/linkedin.png" alt="linkedin" />
+            </a>
+            <button class="hire-button">Meus Trabalhos!</button>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="timeline">
-      <h2>Tiemeline</h2>
+    <section class="works-wrapper">
+      <div class="section-title">
+        <img class="hero-line" src="public/img/line.png" alt="line"/>
+        <h2>Meus <span class="hero-xp-highlight">Trabalhos</span></h2>
+        <img class="hero-line" src="public/img/line.png" alt="line"/>
+      </div>
+      <div class="works">
+        <div class="job"></div>
+        <div class="job"></div>
+        <div class="job"></div>
+        <div class="job"></div>
+        <div class="job"></div>
+        <div class="job"></div>
+        <div class="job"></div>
+        <div class="job"></div>
+      </div>
     </section>
 
-    <section class="contact">
-      <h2>Contacts</h2>
+    <section class="contact-wrapper">
+      <div class="contact">
+        <div class="contact-form">
+          <form action="#">
+            <h2>Contact</h2>
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+            <button type="submit">Enviar Mensagem</button>
+          </form>
+        </div>
+        <div id="contact-globe"></div>
+      </div>
+      <footer class="footer">
+        <strong>© <span id="current-year"></span> | John Doe</strong>
+        <a href="#">Legal Notice</a>
+      </footer>
     </section>
-
-    <footer class="footer">
-      <h2>Footer</h2>
-    </footer>
 
   </article>
 </body>
+
+<script src="public/js/app.js"></script>
+<script type="module" src="public/js/cube.js"></script>
 
 </html>

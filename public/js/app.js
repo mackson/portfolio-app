@@ -1,7 +1,5 @@
 // Script da aplicação
 
-let data = 1;
+const year = document.querySelector("#current-year");
 
-if(data === 1){
-  console.log('data');
-}
+year.innerHTML = new Date().getFullYear();

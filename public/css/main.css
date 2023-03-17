@@ -25,13 +25,9 @@
 .main {
   height: 100vh;
   background: url('../img/bg.jpeg');
+  box-sizing: border-box;
   scroll-snap-type: y mandatory;
   overflow-y: auto;
   scrollbar-width: none;
   color: white;
-}
-
-.footer {
-  height: 30vh;
-  scroll-snap-align: center;
 }
