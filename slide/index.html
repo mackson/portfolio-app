@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Slides - Playlist Youtube 01 - Portfolio Front-End Developer</title>
+
+		<meta name="description" content="Slides - Playlist Youtube 01 - Portfolio Front-End Developer">
+		<meta name="author" content="Mackson Araujo / Escola do Código">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+    <link rel="shortcut icon" href="img/icon_escoladocodigo.png" type="image/x-icon">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="./img/bg.jpeg">
+					<a href="https://revealjs.com">
+						<img src="img/icon_escoladocodigo.png" alt="Escola do Código logo" style="height: 80px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+					</a>
+					<h3>Slides - Playlist Youtube 01 - Portfolio Front-End Developer</h3>
+					<p>
+						<small>Aula criada por: <a href="#">Mackson Araujo</a></small>
+					</p>
+				</section>
+
+				<section data-background-iframe="../index.html" data-background-interactive data-background-transition="zoom"></section>
+
+				<section data-background="./img/bg.jpeg">
+          <img src="./img/html5-css3-javascript.png" alt="html5" />
+				</section>
+
+				<section data-background="./img/bg.jpeg">
+					<h2>Frameworks ou Bibliotecas</h2>
+					<p class="fragment fade-in-then-out">
+						React, Next, Angular, Vue
+					</p>
+				</section>
+
+        <section data-background="./img/bg.jpeg">
+          <h2>Image Backgrounds</h2>
+          <pre><code class="hljs html">&lt;section data-background="image.png"&gt;</code></pre>
+        </section>
+
+        <section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+          <h2>... and GIFs!</h2>
+        </section>
+
+				<section data-transition="slide" data-background="./img/background-sky4.jpg" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
+					</p>
+					<pre><code class="hljs javascript">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
+				</section>
+
+				<section data-background="./img/bg.jpeg">
+					<h2>O que Vamos Estudar?</h2>
+					<ul>
+						<li>No order here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+					</ul>
+				</section>
+
+				<section style="text-align: left;" data-background="./img/bg.jpeg">
+					<h1>OBRIGADO!</h1>
+					<p>
+						- <a href="https://slides.com">Try the online editor</a> <br>
+						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
