@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="" />
-  <title>Mackson Araujo | Desenvolvedor Full Stack</title>
+  <title>João Dom | Desenvolvedor Full Stack</title>
   
   <!-- Custom CSS-->
   <link rel="stylesheet" href="public/css/main.css" />
@@ -27,7 +27,7 @@
       <div class="navbar-wrapper">
         <nav class="navbar">
           <div class="menu-wrapper">
-            <img class="logo" src="public/img/logo3.png" alt="logo"/>
+            <img class="logo" src="public/img/logodev.png" alt="logo"/>
             <ul class="menu">
               <li>Home</li>
               <li>Quem Sou</li>
@@ -46,7 +46,7 @@
       <div class="hero">
         <div class="hero-left">
           <h2 class="hero-hello">Hello, It's Me</h2>
-          <h1 class="hero-name">John Doe</h1>
+          <h1 class="hero-name">João Dom</h1>
           <div class="hero-works">
             <img class="hero-line" src="public/img/line.png" alt="line"/>
             <h4 class="hero-xp">
@@ -74,7 +74,7 @@
         </div>
         <div class="about-right">
           <h2>About <span class="hero-xp-highlight">Me</span></h2>
-          <h1>John Doe</h1>
+          <h1>João Dom</h1>
          
           <div class="about-description">
             I enjoy creating delightful, human-centered digital experiences.
@@ -103,17 +103,65 @@
       <div class="section-title">
         <img class="hero-line" src="public/img/line.png" alt="line"/>
         <h2>Meus <span class="hero-xp-highlight">Trabalhos</span></h2>
-        <img class="hero-line" src="public/img/line.png" alt="line"/>
       </div>
       <div class="works">
-        <div class="job"></div>
-        <div class="job"></div>
-        <div class="job"></div>
-        <div class="job"></div>
-        <div class="job"></div>
-        <div class="job"></div>
-        <div class="job"></div>
-        <div class="job"></div>
+        <div class="card">
+          <div class="card-image-button">
+            <img src="public/img/car-rental.jpg" alt="rental" />
+            <a href="#">
+              <img src="public/img/github.png" alt="link" />
+            </a>
+          </div>
+          <h4 class="card-title">Car Rent</h4>
+          <span class="card-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Non est odit dicta deserunt perferendis? Sed animi, sunt debitis corporis modi ullam molestias, 
+            fugit ipsam illum fugiat est? Possimus, voluptatem dolorum.
+          </span>
+          <div class="card-tags">
+            <span class="tag-red">#react</span>
+            <span class="tag-green">#mongodb</span>
+            <span class="tag-blue">#tailwind</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image-button">
+            <img src="public/img/social-media-app.jpg" alt="rental" />
+            <a href="#">
+              <img src="public/img/github.png" alt="link" />
+            </a>
+          </div>
+          <h4 class="card-title">Social Media App</h4>
+          <span class="card-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Non est odit dicta deserunt perferendis? Sed animi, sunt debitis corporis modi ullam molestias, 
+            fugit ipsam illum fugiat est? Possimus, voluptatem dolorum.
+          </span>
+          <div class="card-tags">
+            <span class="tag-red">#reactnative</span>
+            <span class="tag-green">#firebase</span>
+            <span class="tag-blue">#figma</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image-button">
+            <img src="public/img/dashboard.jpg" alt="rental" />
+            <a href="#">
+              <img src="public/img/github.png" alt="link" />
+            </a>
+          </div>
+          <h4 class="card-title">Dashboard</h4>
+          <span class="card-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Non est odit dicta deserunt perferendis? Sed animi, sunt debitis corporis modi ullam molestias, 
+            fugit ipsam illum fugiat est? Possimus, voluptatem dolorum.
+          </span>
+          <div class="card-tags">
+            <span class="tag-red">#express</span>
+            <span class="tag-green">#nextjs</span>
+            <span class="tag-blue">#postgresql</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -121,18 +169,22 @@
       <div class="contact">
         <div class="contact-form">
           <form action="#">
-            <h2>Contact</h2>
-            <label for="name">Nome</label>
-            <input type="text" name="name" id="name" />
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
-            <button type="submit">Enviar Mensagem</button>
+            <h2>Vamos <span class="hero-xp-highlight">Conversar?</span></h2>
+            <label for="name">*Nome</label>
+            <input type="text" name="name" id="name" placeholder="Qual o seu nome?" />
+            <label for="email">*Email</label>
+            <input type="email" name="email" id="email" placeholder="Qual o seu email?" />
+            <label for="message">*Mensagem</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Qual a sua mensagem"></textarea>
+            <button class="contact-button" type="submit">Enviar Mensagem</button>
           </form>
         </div>
-        <div id="contact-globe"></div>
+        <div id="contact-astronaut">
+          <img src="public/img/astronaut2.png" alt="astrounaut" />
+        </div>
       </div>
       <footer class="footer">
-        <strong>© <span id="current-year"></span> | John Doe</strong>
+        <strong>© <span id="current-year"></span> | João Dom</strong>
         <a href="#">Legal Notice</a>
       </footer>
     </section>
@@ -140,7 +192,7 @@
   </article>
 
   <script src="public/js/app.js"></script>
-  <script type="module" src="public/js/cube.js"></script>
+  
 </body>
 
 </html>

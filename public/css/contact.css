@@ -20,23 +20,66 @@
   flex: 1;
   justify-content: center;
   flex-direction: column;
+  margin-left: 30px;
 }
 
 .contact-form form {
   display: flex;
-  gap: 10px;
+  gap: 15px;
   width: 500px;
+  background: #0d0a20;
+  border: solid 1px #1e1c35;
+  color: white;
+  border-radius: 10px;
+  padding: 20px 20px;
   justify-content: center;
-  padding: 10px;
   flex-direction: column;
 }
 
-#contact-globe{
+.contact-form form h2 {
+ font-size: 38px;
+ margin-bottom: 20px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+input, textarea {
+ color: antiquewhite;
+ padding: 20px;
+ background-color: #17152b;
+ border: solid 1px #343447;
+ border-radius: 10px;
+ margin-bottom: 10px;
+}
+
+.contact-button {
+  cursor: pointer;
+  width: 100%;
+  padding: 15px;
+  background-color: var(--button-primary-color);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+
+#contact-astronaut {
   display: flex;
   flex: 1;
   flex-direction: column;
   justify-content: center;
-  gap: 18px;
+}
+
+#contact-astronaut img {
+  width: 600px;
+  height: 700px;
+  object-fit: contain;
+  animation: animate 2s infinite ease alternate;
 }
 
 .footer {
@@ -47,4 +90,8 @@
   gap: 20px;
   align-items: center;
   padding: 10px 0px;
+}
+
+.footer a {
+  color: var(--button-primary-color);
 }

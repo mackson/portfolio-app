@@ -30,9 +30,72 @@
   font-size: 40px;
 }
 
-.job {
-  width: 300px;
-  height: 400px;
-  border: 2px solid #fff;
-  border-radius: 6px;
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 420px;
+  height: 600px;
+  background: #0d0a20;
+  border: solid 1px #1e1c35;
+  color: white;
+  border-radius: 10px;
+  padding: 20px 20px;
+}
+
+.card-image-button {
+  position: relative;
+}
+
+.card-image-button img {
+  width: 380px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.card-image-button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border: solid 1px #1e1c35;
+  background-color: #0d0a20;
+  border-radius: 50%;
+}
+
+.card-image-button a > img {
+  width: 20px;
+  height: 20px;
+}
+
+.card-description {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.card-title {
+  font-size: 24px;
+}
+
+.card-tags {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.tag-red {
+  color: #BA5067;
+}
+
+.tag-blue {
+  color: #5066b9;
+}
+
+.tag-green {
+  color: #ADFF9B;
 }

@@ -74,10 +74,11 @@
 
 .hero-left {
   display: flex;
-  flex: 2;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  padding-left: 30px;
 }
 
 .hero-hello {
@@ -125,20 +126,16 @@
 }
 
 .hero-right {
-  flex: 3;
-  position: relative;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-image {
   width: 700px;
-  height: 650px;
+  height: 700px;
   object-fit: contain;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  margin-top: 100px;
   animation: animate 2s infinite ease alternate;
 }
 

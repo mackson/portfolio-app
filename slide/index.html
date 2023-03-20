@@ -14,13 +14,15 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
-    <link rel="shortcut icon" href="img/icon_escoladocodigo.png" type="image/x-icon">
+		<link rel="stylesheet" href="dist/reset.css" />
+		<link rel="stylesheet" href="dist/reveal.css" />
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+    <link rel="shortcut icon" href="img/icon_escoladocodigo.png" type="image/x-icon" />
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="plugin/reveal-drawer/dist/drawer.css" />
+    <link rel="stylesheet" href="plugin/menu/menu.css" />
 	</head>
 
 	<body>
@@ -97,6 +99,8 @@
 		<script src="plugin/search/search.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/reveal-drawer/dist/drawer.js"></script>
+		<script src="plugin/menu/menu.js"></script>
 		<script>
 
 			// Also available as an ES module, see:
@@ -106,9 +110,18 @@
 				progress: true,
 				center: true,
 				hash: true,
-
+        drawer: {
+          toggleDrawKey: "d", // (optional) key to enable drawing, default "d"
+          toggleBoardKey: "t", // (optional) key to show drawing board, default "t"
+          colors: ["#fa1e0e", "#8ac926", "#1982c4", "#ffca3a"], // (optional) list of colors avaiable (hex color codes)
+          pathSize: 4, // (optional) path size in px, default 4
+        },
+        menu: {
+          side: 'left',
+          themes: false,
+        },
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealDrawer, RevealMenu ]
 			});
 
 		</script>
