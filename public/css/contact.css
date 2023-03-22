@@ -25,7 +25,6 @@
 
 .contact-form form {
   display: flex;
-  gap: 15px;
   width: 500px;
   background: #0d0a20;
   border: solid 1px #1e1c35;
@@ -38,12 +37,20 @@
 
 .contact-form form h2 {
  font-size: 38px;
- margin-bottom: 20px;
+ margin-bottom: 40px;
+}
+
+.form-control {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 label {
   font-size: 16px;
   font-weight: 500;
+  margin-bottom: 5px;
 }
 
 input, textarea {
@@ -52,7 +59,6 @@ input, textarea {
  background-color: #17152b;
  border: solid 1px #343447;
  border-radius: 10px;
- margin-bottom: 10px;
 }
 
 .contact-button {
@@ -67,6 +73,61 @@ input, textarea {
   font-weight: bolder;
 }
 
+.loading-icon {
+  width: 38px;
+  height: 38px;
+  vertical-align: middle;
+}
+
+.error {
+  font-size: 12px;
+  color: red;
+  font-weight: 400;
+  padding: 2px;
+}
+
+.input-error {
+  border: solid 1px red !important;
+}
+
+.toast {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  margin: auto;
+  width: 300px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  animation: slideInLeft 1s, slideOutLeft 1s 3s;
+}
+
+@keyframes slideInLeft {
+  0% {
+    left: -400px;
+  }
+  100% {
+    left: 20px;
+  }
+}
+
+@keyframes slideOutLeft {
+  0% {
+    left: 20px;
+  }
+  100% {
+    left: -400px;
+  }
+}
 
 #contact-astronaut {
   display: flex;

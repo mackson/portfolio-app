@@ -168,15 +168,32 @@
     <section class="contact-wrapper">
       <div class="contact">
         <div class="contact-form">
-          <form action="#">
+          <form action="#" id="email-form">
             <h2>Vamos <span class="hero-xp-highlight">Conversar?</span></h2>
-            <label for="name">*Nome</label>
-            <input type="text" name="name" id="name" placeholder="Qual o seu nome?" />
-            <label for="email">*Email</label>
-            <input type="email" name="email" id="email" placeholder="Qual o seu email?" />
-            <label for="message">*Mensagem</label>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Qual a sua mensagem"></textarea>
-            <button class="contact-button" type="submit">Enviar Mensagem</button>
+            <div class="form-control">
+              <label for="name">*Nome</label>
+              <input 
+                type="text" 
+                name="name" 
+                id="name" 
+                placeholder="Qual o seu nome?"
+              />
+              <span id="name-error" class="error" hidden>olá</span>
+            </div>
+            <div class="form-control">
+              <label for="email">*Email</label>
+              <input type="email" name="email" id="email" placeholder="Qual o seu email?"/>
+              <span id="email-error" class="error" hidden></span>
+            </div>
+            <div class="form-control">
+              <label for="message">*Mensagem</label>
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="Qual a sua mensagem"></textarea>
+              <span id="message-error" class="error" hidden></span>
+            </div>
+            <button class="contact-button" type="submit">
+              <img class="loading-icon" src="public/img/Rolling-1s-200px.gif" alt="loading" hidden />
+              <span id="contact-button-text">Enviar Mensagem</span>
+            </button>
           </form>
         </div>
         <div id="contact-astronaut">

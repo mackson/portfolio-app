@@ -38,9 +38,9 @@
   height: 600px;
   background: #0d0a20;
   border: solid 1px #1e1c35;
-  color: white;
   border-radius: 10px;
-  padding: 20px 20px;
+  color: white;
+  padding: 20px 17px;
 }
 
 .card-image-button {
