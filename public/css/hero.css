@@ -1,141 +1,48 @@
-/* Hero and Navbar Styles  */
-
-.navbar-wrapper {
-  display: flex;
-  justify-content: center;
-  scroll-snap-align: center;
-}
-
-.navbar {
-  display: flex;
-  width: 1400px;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0px;
-}
-
-.navbar .logo {
-  height: 50px;
-}
-
-.navbar ul {
-  display: flex;
-  gap: 25px;
-  text-decoration: none;
-  list-style: none;
-}
-
-.menu-wrapper {
-  display: flex;
-  gap: 50px;
-  align-items: center;
-}
-
-.buttons-wrapper {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.hire-button {
-  cursor: pointer;
-  width: 130px;
-  padding: 7px;
-  background-color: var(--button-primary-color);
-  color: white;
-  border: none;
-  border-radius: 6px;
-}
-
-.lang-button {
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  background-color: white;
-  border: 1px solid white;
-  border-radius: 50%;
-  padding: 2px;
-}
-
-.hero-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 100vh;
-}
+/* Hero tyles  */
 
 .hero {
   display: flex;
-  justify-content: space-between;
-  height: 100vh;
-  width: 1400px;
-}
-
-.hero-left {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
   justify-content: center;
-  gap: 20px;
-  padding-left: 30px;
-}
-
-.hero-hello {
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 0px;
- }
-
-.hero-name {
- font-size: 51px;
-}
-
-.hero-xp {
-  font-size: 26px;
-}
-
-.hero-xp-highlight {
-  color: var(--button-primary-color);
-}
-
-.hero-works {
-  display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 40px;
 }
 
-.hero-line {
-  height: 6px;
+.hero-content h3 {
+  font-size: 2.2rem;
+  font-weight: 400;
 }
 
-.hero-description {
-  font-size: 20px;
-  color: lightgrey;
+.hero-title {
+  margin-bottom: 2rem;
+}
+
+.hero-title span {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.hero-content h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
 }
 
 .hero-button {
-  cursor: pointer;
-  width: 150px;
-  padding: 5px;
-  background-color: var(--button-primary-color);
-  color: white;
+  display: inline-block;
+  font-size: 1.1rem;
+  width: 250px;
+  padding: 10px;
   font-weight: 700;
-  border: none;
-  border-radius: 6px;
+  letter-spacing: .1rem;
 }
 
-.hero-right {
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-image {
-  width: 700px;
-  height: 700px;
-  object-fit: contain;
-  margin-top: 100px;
+.hero-img img {
+  width: 25vw;
   animation: animate 2s infinite ease alternate;
 }
 

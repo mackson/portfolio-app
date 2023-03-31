@@ -1,0 +1,69 @@
+/* Header, logo and Navbar Styles  */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 9%;
+  z-index: 100;
+  background-color: var(--bg-color);
+}
+
+.header.sticky {
+  border-bottom: .1rem solid #373457;
+  box-shadow: 0 .5rem 1 #1c1b2b;
+  transition: 1s;
+}
+
+.logo {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.logo span {
+  color: var(--primary-color);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: .4s ease;
+  margin-left: 2rem;
+}
+
+.navbar a:hover {
+  color: var(--secondary-color);
+  transition: .4s ease;
+}
+
+.navbar a.active {
+  color: var(--primary-color);
+  transition: .4s ease;
+}
+
+.lang-button {
+  border: 1px solid white;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  padding: .2rem .6rem;
+  transition: .4s ease;
+}
+
+.lang-button:hover {
+  border-color: var(--secondary-color);
+  transition: .4s ease;
+}
+
+#menu-icon {
+  cursor: pointer;
+  font-size: 3.6rem;
+  color: white;
+  display: none;
+}

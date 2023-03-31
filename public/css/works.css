@@ -1,33 +1,29 @@
 /* Works Styles */
 
-.works-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: 100vh;
-  scroll-snap-align: center;
-}
-
 .works {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 1400px;
-  align-items: center;
-  padding: 10px 0px;
+  padding: 10rem;
 }
 
-.section-title {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  width: 1400px;
-  align-items: center;
-  padding: 10px 0px;
+.works h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.works h2 span {
+  color: var(--primary-color);
 }
 
 .section-title h2 {
   font-size: 40px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .card {
@@ -35,12 +31,18 @@
   flex-direction: column;
   gap: 20px;
   width: 420px;
-  height: 600px;
-  background: #0d0a20;
-  border: solid 1px #1e1c35;
+  height: 610px;
+  background: #211f3a;
+  border: solid 1px #373457;
   border-radius: 10px;
   color: white;
   padding: 20px 17px;
+  transition: .4s ease;
+}
+
+.cards-box, .card:hover {
+  border-color: #5b5781;
+  transform: scale(1.04);
 }
 
 .card-image-button {
@@ -65,25 +67,39 @@
   border: solid 1px #1e1c35;
   background-color: #0d0a20;
   border-radius: 50%;
+  color: white;
+  font-size: 1.4rem;
+  transition: .3s ease;
 }
 
-.card-image-button a > img {
-  width: 20px;
-  height: 20px;
+.card-image-button a:hover {
+  color: var( --secondary-color);
+  background-color: #fafafa;
+  border: solid 1px #ffffff;
+  transition: .3s ease;
 }
 
 .card-description {
-  font-size: 16px;
+  font-size: 1.1rem;
   font-weight: 300;
 }
 
 .card-title {
   font-size: 24px;
+  color: white;
+  font-weight: 700;
+  transition: .3s ease;
+}
+
+.card-title:hover {
+  color: var(--primary-color);
+  transition: .3s ease;
 }
 
 .card-tags {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 10px;
   font-size: 14px;
 }
@@ -97,5 +113,5 @@
 }
 
 .tag-green {
-  color: #ADFF9B;
+  color: #8ac926;
 }

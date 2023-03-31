@@ -1,0 +1,63 @@
+/* Main and Reset Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700;1,800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --primary-color: #ff595e;
+  --secondary-color: #b75d69;
+  --bg-color: #0d0a20;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--bg-color) url('../img/bgStars.png') center;
+  font-size: 62.5%;
+  color: white;
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 5rem;
+}
+
+.btn {
+  text-align: center;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 .4rem #979797;
+  transition: .4s ease;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+  color: white;
+  box-shadow: none;
+  transition: .4s ease;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  gap: 20px;
+  padding: 10px 0px;
+  font-size: 1.2rem;
+  color: white;
+}

@@ -1,44 +1,33 @@
 /* Contact Styles */
 
-.contact-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  height: 100vh;
-  scroll-snap-align: center;
-}
-
 .contact {
   display: flex;
   justify-content: center;
-  height: 94vh;
-  width: 1400px;
+  align-items: center;
+  gap: 50px;
+  padding: 8rem 3rem;
 }
 
 .contact-form {
   display: flex;
-  flex: 1;
-  justify-content: center;
-  flex-direction: column;
-  margin-left: 30px;
-}
-
-.contact-form form {
-  display: flex;
   width: 500px;
-  background: #0d0a20;
-  border: solid 1px #1e1c35;
+  background: #17152b;
+  border: solid 1px #373457;
   color: white;
   border-radius: 10px;
-  padding: 20px 20px;
+  padding: 20px;
   justify-content: center;
   flex-direction: column;
 }
 
-.contact-form form h2 {
+.contact-form h2 {
  font-size: 38px;
  margin-bottom: 40px;
 }
+
+.contact-form h2 span {
+  color: var(--primary-color)
+ }
 
 .form-control {
   display: flex;
@@ -56,7 +45,7 @@ label {
 input, textarea {
  color: antiquewhite;
  padding: 20px;
- background-color: #17152b;
+ background-color: #211f3a;
  border: solid 1px #343447;
  border-radius: 10px;
 }
@@ -65,7 +54,7 @@ input, textarea {
   cursor: pointer;
   width: 100%;
   padding: 15px;
-  background-color: var(--button-primary-color);
+  background-color: var(--primary-color);
   color: white;
   border: none;
   border-radius: 10px;
@@ -74,9 +63,16 @@ input, textarea {
 }
 
 .loading-icon {
-  width: 38px;
-  height: 38px;
+  font-size: 1.8em;
   vertical-align: middle;
+}
+
+.show {
+  display: inline-flex !important;
+}
+
+.hide {
+  display: none !important;
 }
 
 .error {
@@ -131,28 +127,11 @@ input, textarea {
 
 #contact-astronaut {
   display: flex;
-  flex: 1;
-  flex-direction: column;
+  flex-direction: center;
   justify-content: center;
 }
 
 #contact-astronaut img {
-  width: 600px;
-  height: 700px;
-  object-fit: contain;
+  width: 27vw;
   animation: animate 2s infinite ease alternate;
-}
-
-.footer {
-  display: flex;
-  width: 1400px;
-  height: 6vh;
-  justify-content: center;
-  gap: 20px;
-  align-items: center;
-  padding: 10px 0px;
-}
-
-.footer a {
-  color: var(--button-primary-color);
 }
